@@ -24,7 +24,8 @@
         "yiisoft/yii2-jui": "^2.0",
         "yiidoc/yii2-redactor": "*",
         "kartik-v/yii2-export": "@dev",
-        "mpdf/mpdf": "@dev"
+        "mpdf/mpdf": "@dev",
+        "yiisoft/yii2-authclient": "^2.1"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
