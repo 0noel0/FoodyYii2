@@ -23,8 +23,15 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+    
 <?php $this->beginBody() ?>
-
+    <style>
+        .language-picker{
+            float: right;
+            margin-top: 15px;
+        }
+        
+    </style>
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -52,10 +59,16 @@ AppAsset::register($this);
             . Html::endForm()
             . '</li>';
     }
+    
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
     ]);
+        echo \lajax\languagepicker\widgets\LanguagePicker::widget([
+         'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+         'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE,
+         'class' =>'cc'
+     ]);
     NavBar::end();
     ?>
 

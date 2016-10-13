@@ -2,6 +2,8 @@
 
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'language' => 'vi',
+    'bootstrap' => ['languagepicker'],
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -18,6 +20,27 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
+        'backup' => [
+            'class' => 'demi\backup\Component',
+            // The directory for storing backups files
+            'backupsFolder' => dirname(dirname(__DIR__)) . '/backups', // <project-root>/backups
+            // Directories that will be added to backup
+            'directories' => [
+                'uploads' => '@frontend/web/uploads',
+            ],
+        ],
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                        'class' => 'yii\i18n\PhpMessageSource',
+                        'basePath' => '@approot/messages',
+                    ]
+                ]
+        ],
+        'languagepicker' => [
+            'class' => 'lajax\languagepicker\Component',        // List of available languages (icons and text)
+            'languages' => ['en' => 'English', 'vi' => 'Việt Nam']
+        ]
     ],
     'modules' => [
         'redactor' => 'yii\redactor\RedactorModule',
