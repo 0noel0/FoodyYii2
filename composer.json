@@ -18,18 +18,21 @@
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        
+        "damirka/yii2-jwt": "v0.2.1",
         "demi/backup": "~1.0",
         "dmstr/yii2-adminlte-asset": "2.*",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "lajax/yii2-language-picker": "1.*",
         "yiidoc/yii2-redactor": "*",
-        
+        "tebazil/yii2-db-seeder": "*",
         "yiisoft/yii2-jui": "^2.0",
         "cornernote/yii2-softdelete": "*",
         "kartik-v/yii2-export": "@dev",
         "mpdf/mpdf": "@dev",
-        "yiisoft/yii2-authclient": "^2.1"
+        "yiisoft/yii2-authclient": "^2.1",
+        "kartik-v/yii2-social": "@dev",
+        "ktamas77/firebase-php": "dev-master",
+        "mootensai/yii2-relation-trait": "^1.1"
         
     },
     "require-dev": {

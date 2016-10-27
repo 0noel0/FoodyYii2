@@ -3,7 +3,7 @@
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'language' => 'vi',
-    'bootstrap' => ['languagepicker'],
+    
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -37,10 +37,7 @@ return [
                     ]
                 ]
         ],
-        'languagepicker' => [
-            'class' => 'lajax\languagepicker\Component',        // List of available languages (icons and text)
-            'languages' => ['en' => 'English', 'vi' => 'Việt Nam']
-        ]
+        
     ],
     'modules' => [
         'redactor' => 'yii\redactor\RedactorModule',

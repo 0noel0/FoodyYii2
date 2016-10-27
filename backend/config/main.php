@@ -10,7 +10,7 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
+    'bootstrap' => ['languagepicker'],
     'modules' => [],
     'components' => [
         'request' => [
@@ -37,6 +37,10 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'languagepicker' => [
+            'class' => 'lajax\languagepicker\Component',        // List of available languages (icons and text)
+            'languages' => ['en' => 'English', 'vi' => 'Việt Nam']
+        ]
         
         /*
         'urlManager' => [

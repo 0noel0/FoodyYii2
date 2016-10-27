@@ -174,6 +174,12 @@ class User extends ActiveRecord implements IdentityInterface
                 return 'Unknown';
         }
     }
+    public static function getRole() {
+        return array(self::ROLE_ADMIN, self::ROLE_USER);
+    }
+    public static function getStatus() {
+        return array(self::STATUS_DELETED, self::STATUS_NOT_ACTIVE. self::STATUS_ACTIVE);
+    }
     /**
      * @inheritdoc
      */

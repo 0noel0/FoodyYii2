@@ -24,6 +24,7 @@ use yii\db\Expression;
 class Category extends ActiveRecord
 {
     public $file_image;
+    use \mootensai\relation\RelationTrait;
     
     public function behaviors() {
         return [

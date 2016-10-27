@@ -6,6 +6,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use kartik\social\FacebookPlugin;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
@@ -40,6 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?php ActiveForm::end(); ?>
             <!-- social-auth-links -->
+            <?= FacebookPlugin::widget(['type'=>FacebookPlugin::COMMENT, 'settings' => ['data-width'=>1000, 'data-numposts'=>5]])?>
+            <?= FacebookPlugin::widget(['type'=>FacebookPlugin::LIKE])?>
         </div>
     </div>
 </div>
