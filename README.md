@@ -1,3 +1,24 @@
+B1 : git clone https://github.com/vietthanhbk1994/FoodyYii2.git
+
+B2 : php init
+0
+yes
+All
+B3 : composer install
+
+if not yet install composer {
+    curl -sS https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/local/bin/composer
+    composer -v
+}
+B4 : composer update
+
+B5 : edit database in common/config/main-local
+
+B6 : cd nameProject : php yii migrate
+
+B7 : if not run you can set read/write url
+
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
 
