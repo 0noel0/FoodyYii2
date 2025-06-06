@@ -6,7 +6,7 @@ use yii\codeception\BasePage;
 use common\models\LoginForm;
 
 /**
- * Represents loging page
+ * Represents login page
  * @property \tests\codeception\frontend\AcceptanceTester|\tests\codeception\frontend\FunctionalTester|\tests\codeception\backend\AcceptanceTester|\tests\codeception\backend\FunctionalTester $actor
  */
 class LoginPage extends BasePage
